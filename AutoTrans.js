@@ -1,11 +1,13 @@
 // ==UserScript==
-// @name         彩云小译自动翻译英文页面
+// @name         英文网页中英双语对照自动翻译
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
+// @description  英文网页双语对照自动翻译，彩云小译自动翻译英文页面!English web pages, Chinese English automatic translation by Caiyun smart translation！
 // @author       You
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js
-// @match             *://*/*
+// @match             http*://*/*
+// @exclude http*://*.google.com/*
+// @exclude https://*.github.com/*
 // @run-at            document-end
 // ==/UserScript==
 
