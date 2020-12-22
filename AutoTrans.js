@@ -1,26 +1,27 @@
 // ==UserScript==
 // @name         英文网页中英双语对照自动翻译
 // @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  英文网页双语对照自动翻译，彩云小译自动翻译英文页面!English web pages, Chinese English automatic translation by Caiyun smart translation！
-// @author       You
+// @version      1.0.1
+// @description  国外英文网页,双语对照自动翻译，彩云小译自动翻译英文页面!English web pages, Chinese English automatic translation by Caiyun smart translation！
+// @author       JasonHuang
 // @license    GPL-3.0-only
 // @create     2020-12-22
 // @include http://*  
 // @include https://* 
 // @exclude    *://*.google*/*
 // @exclude    *://*.github*/*
+// @exclude /(^[^:\/#\?]*:\/\/([^#\?\/]*\.)?github\.com(:[0-9]{1,5})?\/.*$)/
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @run-at       document-body
 // @grant    unsafeWindow
+// @note    2020-12-22-V1.0.1 去除google/github网站自动翻译功能
+// @note    2020-12-22-V1.0.0 完成英文网站自动双语翻译功能
 // ==/UserScript==
 
-/*需要加个弹框控制是否使用js翻译 */
-
-/*下面是从360极速浏览器彩云小译插件拷贝的脚本代码trs.js . */
+/*下面是从彩云小译插件copy的js代码 */
 $(document).ready(function(){
   $("html:lang(en)").show(function(){
   	!function (e) {
