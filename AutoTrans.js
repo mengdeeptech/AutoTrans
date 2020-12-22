@@ -1,14 +1,21 @@
 // ==UserScript==
 // @name         英文网页中英双语对照自动翻译
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0
 // @description  英文网页双语对照自动翻译，彩云小译自动翻译英文页面!English web pages, Chinese English automatic translation by Caiyun smart translation！
 // @author       You
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js
-// @match             http*://*/*
-// @exclude http*://*.google.com/*
+// @license    GPL-3.0-only
+// @create     2020-12-22
+// @include http://*  
+// @include https://* 
+// @exclude http*://*.google.*/*
 // @exclude https://*.github.com/*
-// @run-at            document-end
+// @grant        GM_xmlhttpRequest
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js
+// @run-at       document-body
+// @grant    unsafeWindow
 // ==/UserScript==
 
 /*需要加个弹框控制是否使用js翻译 */
