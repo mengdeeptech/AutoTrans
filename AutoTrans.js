@@ -8,8 +8,8 @@
 // @create     2020-12-22
 // @include http://*  
 // @include https://* 
-// @exclude http*://*.google.*/*
-// @exclude https://*.github.com/*
+// @exclude    *://*.google*/*
+// @exclude    *://*.github*/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
 // @grant        GM_getValue
