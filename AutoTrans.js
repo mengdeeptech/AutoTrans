@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         英文网页中英双语对照自动翻译
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  国外英文网页,双语对照自动翻译，彩云小译自动翻译英文页面!English web pages, Chinese English automatic translation by Caiyun smart translation！
 // @author       JasonHuang
 // @license    GPL-3.0-only
@@ -10,6 +10,10 @@
 // @include https://* 
 // @exclude    *://*.google*/*
 // @exclude    *://*.github*/*
+// @exclude    *://*gov.cn/*
+// @exclude    *://*edu.cn/*
+// @exclude    *://*.baidu.com/*
+// @exclude    *://*.qq.com/*
 // @exclude /(^[^:\/#\?]*:\/\/([^#\?\/]*\.)?github\.com(:[0-9]{1,5})?\/.*$)/
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
@@ -17,6 +21,7 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @run-at       document-body
 // @grant    unsafeWindow
+// @note    2020-12-27-V1.0.2 去除部分网站（用户反馈增加）自动翻译功能
 // @note    2020-12-22-V1.0.1 去除google/github网站自动翻译功能
 // @note    2020-12-22-V1.0.0 完成英文网站自动双语翻译功能
 // ==/UserScript==
