@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         英文网页中英双语对照自动翻译
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  国外英文网页,双语对照自动翻译，彩云小译自动翻译英文页面!English web pages, Chinese English automatic translation by Caiyun smart translation！
 // @author       JasonHuang
 // @license    GPL-3.0-only
