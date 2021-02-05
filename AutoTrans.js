@@ -1,27 +1,42 @@
 // ==UserScript==
 // @name         英文网页中英双语对照自动翻译
 // @namespace    http://tampermonkey.net/
-// @version      1.0.2
+// @version      1.0.1
 // @description  国外英文网页,双语对照自动翻译，彩云小译自动翻译英文页面!English web pages, Chinese English automatic translation by Caiyun smart translation！
 // @author       JasonHuang
 // @license    GPL-3.0-only
 // @create     2020-12-22
-// @include http://*  
-// @include https://* 
+// @include http://*
+// @include https://*
 // @exclude    *://*.google*/*
 // @exclude    *://*.github*/*
 // @exclude    *://*gov.cn/*
 // @exclude    *://*edu.cn/*
+// @exclude    *://*.cn/*
 // @exclude    *://*.baidu.com/*
 // @exclude    *://*.qq.com/*
+// @exclude    *://*.bilibili.com/*
+// @exclude    *://*.jianshu.com/*
+// @exclude    *://*sspai.com/*
+// @exclude    *://*cnki.net/*
+// @exclude    *://*.160.com/*
+// @exclude    *://*.huaweicloud.com/*
+// @exclude    *://*ikeepstudying.com/*
+// @exclude    *://*.ifdream.net/*
+// @exclude    *://*.topthink.com/*
 // @exclude /(^[^:\/#\?]*:\/\/([^#\?\/]*\.)?github\.com(:[0-9]{1,5})?\/.*$)/
+// @exclude    *://*.wordpress.org/zh*
+// @exclude    https://developer.wordpress.org/reference/*
+// @exclude    *://*.oceanengine.com/*
+// @exclude    *://*.lusongsong.com/*
+// @exclude    *://*.cambridge.org/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @run-at       document-body
 // @grant    unsafeWindow
-// @note    2020-12-27-V1.0.2 去除部分网站（用户反馈增加）自动翻译功能
+// @note    2021-02-05-V1.0.2 新增用户反馈取消部分v1.0.2自动翻译功能
 // @note    2020-12-22-V1.0.1 去除google/github网站自动翻译功能
 // @note    2020-12-22-V1.0.0 完成英文网站自动双语翻译功能
 // ==/UserScript==
