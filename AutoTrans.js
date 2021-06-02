@@ -47,8 +47,6 @@ $(document).ready(function(){
     var trans = document.createElement("script");
     trans.src = ("https:" == document.location.protocol ? "https://" : "http://") + "caiyunapp.com/dest/trs.js",
         trans.type = "text\/javascript";
-    trans.onerror= "";
-    trans.setAttribute("style", "display: none;");
     document.body.appendChild(trans);
   });
 });
