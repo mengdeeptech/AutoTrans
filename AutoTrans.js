@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         双语对照网页翻译(英文网页双语对照自动翻译)
 // @namespace    http://tampermonkey.net/
-// @version      1.0.2
+// @version      1.1.0
 // @description  本插件开发的初心在于《自动翻译，解放双手》。双语对照网页翻译(国外英文网页,双语对照自动翻译)!English web pages, Chinese English automatic translation by Caiyun smart translation！
 // @author       JasonHuang
 // @license    GPL-3.0-only
